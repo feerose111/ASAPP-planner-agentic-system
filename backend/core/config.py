@@ -8,7 +8,9 @@ class Settings(BaseSettings):
     POSTGRES_DB : str  = "asapp_db"
 
     SECRET_KEY: str
+    OPENROUTER_API_KEY : str
     DEBUG: bool = True
+
 
     REDIS_URL: str | None = None
     QDRANT_URL: str | None = None
