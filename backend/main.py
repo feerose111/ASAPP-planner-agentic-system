@@ -5,7 +5,7 @@ from loguru import logger
 from backend.core.config import settings
 from backend.db.state import create_database_state
 from backend.api import router as v1_router
-from backend.core.exception import register_exception_handlers
+from backend.core.exceptions import register_exception_handlers
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):

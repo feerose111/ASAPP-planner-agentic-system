@@ -11,6 +11,13 @@ class Settings(BaseSettings):
     OPENROUTER_API_KEY : str
     DEBUG: bool = True
 
+    COOKIE_SECURE : bool = True
+    COOKIE_HTTPONLY : bool = True
+
+    AUTH_SECRET : str
+    AUTH_TOKEN_EXP_MIN : int = 30
+    ALGORITHM: str = "HS256"
+    REFRESH_TOKEN_EXPIRE_DAYS : int = 7
 
     REDIS_URL: str | None = None
     QDRANT_URL: str | None = None
